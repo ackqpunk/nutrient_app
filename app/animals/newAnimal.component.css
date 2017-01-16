@@ -1,0 +1,10 @@
+.animal {
+    width: 80;
+    height: 80;
+    margin: 12;
+    margin-bottom: 24;
+}
+
+.animal > Image {
+    height: 70;
+}

@@ -1,0 +1,16 @@
+<GridLayout rows="auto, *" class="page pageContainer body">
+    <StackLayout row="0" col="0">
+        <TextView class="pageTitle text-center" text="Use an existing patient or create a new one?"></TextView>
+        <GridLayout columns="*,*" rows="auto" class="animalChoiceGrid">
+            <StackLayout class="choiceButton" col=0 [nsRouterLink]="['/newAnimal']">
+                <Label text="New Animal"></Label>
+                <Label text="&#xf067;" class="fa icon"></Label>
+            </StackLayout>
+            <StackLayout class="choiceButton" col=1>
+                <Label text="Existing Animal"></Label>
+                <Label text="&#xf07c;" class="fa icon"></Label>
+            </StackLayout>
+        </GridLayout>
+    </StackLayout>
+    <StackLayout row="1" col="0" ></StackLayout>
+</GridLayout>

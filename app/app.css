@@ -1,0 +1,78 @@
+﻿@import '~/css/core.dark.css'; 
+
+button, label, stack-layout {
+    horizontal-align: center;    
+}
+/*
+button {
+    font-size: 16;
+    padding: 6 12;
+    border-radius: 4;
+    border-color: lightgray;
+    background-color: lightgray;
+    color: #333;
+}
+
+Page {
+    font-family: "OpenSans-Regular";
+    background-color: #1a1a1a;
+    color: white;
+    background-image: url("res://images/cat.gif");
+}*/
+
+Page {
+    background-image: url('~/images/veggie_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+ListView {
+    color: #333;
+}
+
+.fa {
+    font-family: "FontAwesome";
+}
+
+/*.choiceButton {
+    padding: 6;
+    background-color: lightgray;
+    color: #333;
+    border-radius: 4;
+    margin-top: 48;
+}*/
+
+.legalNotice {
+    font-size: 12;
+    font-family: "OpenSans-Italic";
+    padding-top: 20;
+    margin: 6;
+}
+
+ActionBar {
+    background-color: #303030;
+    color: #ccc;
+}
+
+TextField {
+    width: 100%;
+    padding: 1;
+    border-color: white;
+    border-bottom-width: 1px;
+    placeholder-color: #c0c0c0;
+}
+
+.pageContainer {
+    background-color: #303030;
+    margin: 16, 8;
+    border-radius: 6;
+    opacity: .92;
+    padding: 6;
+    padding-bottom: 12;  
+}
+.btn-outline {color: #e0e0e0; border-color: #e0e0e0;}
+.form .input.input-border-bottom{border-width:1;border-color:#e0e0e0;border-radius:2;padding:8 !important}
+.form .label { margin-bottom: 1; text-align: left; width: 100%;}
+
+
