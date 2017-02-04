@@ -1,1 +1,9 @@
-<h1>FOOD</h1>
+<Label Text="Select Food" class="h2"></Label>
+    <!--<ListPicker #picker class="p-15" 
+                [items]="foodGroups | async"
+                [selectedIndex]="selectedIndex" 
+                (selectedIndexChange)="selectedIndexChanged(picker)">
+
+</ListPicker>-->
+<DropDown #dd backroundColor="red" [items]="items | async" [selectedIndex]="selectedIndex">
+        </DropDown>
