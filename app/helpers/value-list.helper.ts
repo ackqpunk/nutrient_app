@@ -3,6 +3,11 @@ export interface IValueItem {
     DisplayMember: any
 }
 
+export class ValueItem implements IValueItem {
+    ValueMember: any
+    DisplayMember: any
+}
+
 export class ValueList {
     private _array: Array<IValueItem>;
 

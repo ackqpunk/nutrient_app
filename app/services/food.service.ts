@@ -1,7 +1,7 @@
 import { Injectable }     from '@angular/core';
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
 import {Observable} from 'rxjs/Rx';
-import {ValueList, IValueItem} from '../helpers/value-list.helper';
+import {ValueList, ValueItem, IValueItem} from '../helpers/value-list.helper';
 
 // Import RxJs required methods
 import 'rxjs/add/operator/map';
@@ -34,11 +34,11 @@ function mapFoodGroups(response:Response): ValueList{
    return new ValueList(valueItems);
 }
 
-function toValueItem(r:any): IValueItem{
-  let person = <IValueItem>({
+function toValueItem(r:any): IValueItem { 
+  let person : ValueItem = {
     ValueMember: r.foodGroupID,
     DisplayMember: r.name
-  });
+  };
   console.log('Parsed person:', person);
   return person;
 }
